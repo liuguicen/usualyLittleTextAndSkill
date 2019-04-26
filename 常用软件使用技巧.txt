@@ -1,0 +1,4 @@
+chrome不能复制的网页
+F12，点击顶部console，输入document.body.innerText即可
+
+ps对于白色背景图片不能按照网上教程做成透明圆角，要再用橡皮擦-魔术橡皮擦，点一下才行 
