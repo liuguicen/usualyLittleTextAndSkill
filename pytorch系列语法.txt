@@ -1,0 +1,59 @@
+# 求L1范数(所有元素绝对值求和)
+print(a.norm(1), b.norm(1), c.norm(1))
+# 求L2范数(所有元素的平方和再开根号)
+print(a.norm(2), b.norm(2), c.norm(2))
+
+获取元素数量，每一维长度
+size = test_input.size()
+返回值相当于多维数组
+直接
+size[0],[1]
+
+List到numpy
+List --> Arrary: np.array(List 变量)
+a = [1, 2, 3, 4]
+b = np.array(a)
+
+Arrary --> List: Array 变量.tolist()
+a = [1, 2, 3, 4]
+b = np.array(a)
+c = b.tolist()
+
+List --> Tensor: torch.Tensor(List 变量)
+a = [1, 2, 3, 4]
+b = torch.Tensor(a)
+
+Tensor --> List: Tensor 变量.numpy().tolist()
+a = [1, 2, 3, 4]
+b = torch.Tensor(a)
+c = b.numpy().tolist()
+
+改变尺寸
+改变维度
+矩阵转向量等等
+x.view(2, 3, 3)
+
+torch.FloatTensor()等，向量组装成张量
+
+1.张量点乘，每个元素对应相乘
+feature_user * feature_movie 
+z = x.mul(y) ,
+
+2.张量相乘， z = x.mm(y) , (m,n) x (n,p)
+
+
+写入csv多一行空行问题：
+
+with open(birth_weight_file,'w') as f:
+    writer=csv.writer(f)
+    writer.writerow(birth_header)
+    writer.writerows(birth_data)
+    f.close()
+这种写法最终的结果就是生成的csv文件每两行中间都有一行空白行，解决办法就是写入后面加上newline=''
+
+写法：
+with open(birth_weight_file,'w',newline='') as f:
+    writer=csv.writer(f)
+    writer.writerow(birth_header)
+    writer.writerows(birth_data)
+    f.close()

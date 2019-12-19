@@ -2,3 +2,12 @@ chrome不能复制的网页
 F12，点击顶部console，输入document.body.innerText即可
 
 ps对于白色背景图片不能按照网上教程做成透明圆角，要再用橡皮擦-魔术橡皮擦，点一下才行 
+
+Chrome 访问stackoverflow 慢
+
+Chrome安装方法（Google被墙了上不去）：
+https://github.com/justjavac/ReplaceGoogleCDN/archive/master.zip 下载ReplaceGoogleCDN然后解压，找到chrome子目录 
+打开Chrome，输入: chrome://extensions/
+勾选Developer Mode
+选择Load unpacked extension...然后定位到刚才解压的文件夹，确定
+这就安装好了，去掉Developer Mode勾选。
