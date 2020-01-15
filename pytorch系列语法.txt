@@ -28,6 +28,13 @@ a = [1, 2, 3, 4]
 b = torch.Tensor(a)
 c = b.numpy().tolist()
 
+
+# numpy按第i列的大小排序
+sorted_by_mid = score_data_array[np.lexsort(score_data_array.T[col_id, None])]
+
+#插入位置
+x=np.insert(x,i,[a,b])表示在ndarray x的第i个位置插入[a,b]
+
 改变尺寸
 改变维度
 矩阵转向量等等
