@@ -1,0 +1,115 @@
+为了方便查看，先把Git的所有命令写在前面，后面是具体的解释
+##Git常用命令集合：
+
+###配置相关
+配置用户名
+git config --global user.name "xxx"
+配置邮箱
+git config --global user.email "xxx"
+配置密码 不能直接设置，需要修改相应的文件
+git config --global core.editor xxx
+设置比较工具为beyond compare 3
+$ git config --global diff.tool bc3
+$ git config --global difftool.bc3.path "c:/program files/beyond compare 3/bcomp.exe"
+设置默认的合并工具设置和对比工具类似：
+$ git config --global merge.tool bc3
+$ git config --global mergetool.bc3.path "c:/program files/beyond compare 3/bcomp.exe"
+
+创建.gitignore文件，项目目录之下都可以
+/ 结尾表示文件夹
+# 注释
+！XXX 表示被包含的目录下xxx文件除外
+
+###对比相关
+git diff xxx 当前版本与另外版本之间的差异，如下
+git diff test 与分支test当前版本的差异
+git diff HEAD 比较当前工作版本与HEAD的差别
+git diff --staged
+git diff --cached 这两个一样，比较暂存区与上次提交时的快照HEAD之间的差异
+
+git diff Axx Bxx 比较Axx与Bxx之间的差异，可以是版本间，也可以是分枝间，如：
+git diff dev master 比较dev与master当前版本的差异
+git diff dev...master 比较dev与master分开之后，master分支上的change
+git diff HEAD^HEAD 上次和上上次
+git diff SHA1 SHA2 两个历史版本
+
+修改提交信息：
+git commit --amend
+
+###删除相关
+添加：
+git add xxx 有几个作用，加入到跟踪文件集，并且添加到暂存区中
+git add . 添加所有文件
+删除跟踪区文件
+git rm xxx
+删除目录
+git rm -r xxx
+移动文件
+git mv file_from file_to
+
+###撤销相关
+取消已暂存的文件， 将其从暂存区返回到已修改未暂存的区域中
+git reset HEAD xxxx
+不再跟踪文件
+git rm --cached xxx
+撤销commit，只撤销commit操作，保留修改的数据，即将上次的从提交区放到未提交的区域
+git reset HEAD~
+取消对文件的修改
+git checkout -- xxxx
+撤销所有本地未提交的修改
+git checkout .
+重新填写提交信息
+git commit --amend
+
+###Log相关
+查看Log的操作
+-n 表示显示最近n次的提交
+-p 按补丁格式显示每个更新之间的差异。
+–stat 显示每次更新的文件修改统计信息。
+–shortstat 只显示 --stat 中最后的行数修改添加移除统计。
+–name-only 仅在提交信息后显示已修改的文件清单。
+–name-status 显示新增、修改、删除的文件清单。
+–abbrev-commit 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。
+–relative-date 使用较短的相对时间显示（比如，“2 weeks ago”）。
+–graph 显示 ASCII 图形表示的分支合并历史。
+
+–grep 根据提交信息中的关键字过滤（自然的）
+–since, --after 仅显示指定时间之后的提交。
+–until, --before 仅显示指定时间之前的提交。
+–author 仅显示指定作者相关的提交。
+–committer 仅显示指定提交者相关的提交。
+
+–pretty 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
+–pretty 进一层的筛选控制
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+
+例子
+git log --pretty="%h - %s" --author=gitster --since=“2008-10-01” \ --before=“2008-11-01” --no-merges – t/
+
+别名，用其他字符串代替常用命令，起到快捷输入的作用
+git config --global alias.last 'log -1 HEAD'
+
+###分支相关
+切换分支
+git checkout xxx
+创建分支
+git branch [branch-name]
+创建并切换到该分支
+git branch -b [branch-name]
+删除已合并过的分支，如果没合并过则不能直接删除，需要使用 -D强制删除
+git branch -d iss53
+查看所有分支
+git branch
+与当前分支合并的分支
+git branch –merge
+未与当前分支合并的分支
+git branch –no-merged
+
+拉取远程分支
+git checkout -b serverfix origin/serverfix
+将本地分支添加到远程仓库中：
+git push origin serverfix
+git push origin serverfix:serferfix #不推荐，和删除远程分支之差一个空格，很容易弄混
+删除远程仓库的分支 ，非常无厘头的语法来删除它，极易和前面一个添加分支弄混，只多一个空格？？？
+git push origin :serverfix

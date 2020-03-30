@@ -4,3 +4,4 @@ ctrl + art + /
 ctrl + art + m
 ctrl+j 显示当前范围代码模板
 ctrl+shift+F8 断点界面
+ctrl + p 在方法的括号里面提示参数
