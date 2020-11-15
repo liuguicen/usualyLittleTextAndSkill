@@ -1,4 +1,4 @@
-# 求L1范数(所有元素绝对值求和)
+﻿# 求L1范数(所有元素绝对值求和)
 print(a.norm(1), b.norm(1), c.norm(1))
 # 求L2范数(所有元素的平方和再开根号)
 print(a.norm(2), b.norm(2), c.norm(2))
@@ -9,7 +9,7 @@ size = test_input.size()
 直接
 size[0],[1]
 
-List到numpy
+List与numpy
 List --> Arrary: np.array(List 变量)
 a = [1, 2, 3, 4]
 b = np.array(a)
@@ -27,6 +27,10 @@ Tensor --> List: Tensor 变量.numpy().tolist()
 a = [1, 2, 3, 4]
 b = torch.Tensor(a)
 c = b.numpy().tolist()
+
+#numpy 随机数组
+np.random.rand(每一维长度) #均匀分布
+np.random.randn(每一维长度) # 正态分布
 
 
 # numpy按第i列的大小排序

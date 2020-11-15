@@ -1,0 +1,13 @@
+添加注释
+ctrl + art + /
+把代码抽成方法
+ctrl + art + m
+ctrl+j 显示当前范围代码模板
+ctrl+shift+F8 断点界面
+ctrl + p 在方法的括号里面提示参数
+智能提示快捷键,在 Eclipse中叫 Content Assist,Android Studio中叫做Class Name Completion，快捷键也变了，改之
+view里面有代码比较compare with ...
+
+向前移动多行代码，比如方法
+选中代码，然后
+shift + tab

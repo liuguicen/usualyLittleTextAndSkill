@@ -11,3 +11,6 @@ https://github.com/justjavac/ReplaceGoogleCDN/archive/master.zip 下载ReplaceGoog
 勾选Developer Mode
 选择Load unpacked extension...然后定位到刚才解压的文件夹，确定
 这就安装好了，去掉Developer Mode勾选。
+
+搜狗输入法里面可以快捷输入英文，有时候在中文文档里面间歇性的输出几个英文符号，频繁切换很麻烦，搜狗实际上可以在它的候选窗口上面输入符号，此时无法匹配汉字了，
+这时虽然没切换语言，但是符号已经变成了英文，回车上屏即可。
