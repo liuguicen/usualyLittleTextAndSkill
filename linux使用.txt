@@ -1,0 +1,38 @@
+ѹ����ѹ
+
+# �����������ѹ��
+tar -xvf FileName.tar         # ���
+tar -cvf FileName.tar DirName # ��DirName�����������ļ����У����
+
+.gz�ļ�
+# .gz
+gunzip FileName.gz  # ��ѹ1
+gzip -d FileName.gz # ��ѹ2
+gzip FileName       # ѹ����ֻ��ѹ���ļ�
+1
+
+.tar.gz�ļ��� .tgz�ļ�
+# .tar.gz �� .tgz
+tar -zxvf FileName.tar.gz               # ��ѹ
+tar -zcvf FileName.tar.gz DirName       # ��DirName�����������ļ����У�ѹ��
+tar -C DesDirName -zxvf FileName.tar.gz # ��ѹ��Ŀ��·��
+
+.zip�ļ�
+# �о�.zipռ�ÿռ��.tar.gz��
+unzip FileName.zip -d ��ѹ�ļ�����(����Ҫ�Ѿ������õ�)         # ��ѹ
+zip FileName.zip DirName    # ��DirName����ѹ��
+zip -r FileName.zip DirName # ѹ�����ݹ鴦����ָ��Ŀ¼�µ������ļ�����Ŀ¼һ��ѹ��
+1
+2
+3
+4
+.rar�ļ�
+# mac��linux��û���Դ�rar����Ҫȥ����
+rar x FileName.rar      # ��ѹ
+rar a FileName.rar DirName # ѹ�� /article/details/80435665
+
+����������⣺
+��ǽ
+�ļ���������ʾ·��
+�ѹ����뷨���ظ���
+

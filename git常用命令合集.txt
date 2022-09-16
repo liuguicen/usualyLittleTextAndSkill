@@ -113,3 +113,5 @@ git push origin serverfix
 git push origin serverfix:serferfix #不推荐，和删除远程分支之差一个空格，很容易弄混
 删除远程仓库的分支 ，非常无厘头的语法来删除它，极易和前面一个添加分支弄混，只多一个空格？？？
 git push origin :serverfix
+问题 OpenSSL SSL_read: Connection was reset, errno 10054
+git config --global http.sslVerify "false"

@@ -1,1 +1,5 @@
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 
+pip安装到conda环境中，
+pip install xxx --target=xxx/site-packages conda 的目录，或者环境下的目录
+比如
+pip install xxx --target=C:\ProgramData\Anaconda3\Lib\site-packages
