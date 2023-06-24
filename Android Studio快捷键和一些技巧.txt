@@ -1,13 +1,20 @@
-Ìí¼Ó×¢ÊÍ
+ï¿½ï¿½ï¿½×¢ï¿½ï¿½
 ctrl + art + /
-°Ñ´úÂë³é³É·½·¨
+ï¿½Ñ´ï¿½ï¿½ï¿½ï¿½É·ï¿½ï¿½ï¿½
 ctrl + art + m
-ctrl+j ÏÔÊ¾µ±Ç°·¶Î§´úÂëÄ£°å
-ctrl+shift+F8 ¶Ïµã½çÃæ
-ctrl + p ÔÚ·½·¨µÄÀ¨ºÅÀïÃæÌáÊ¾²ÎÊý
-ÖÇÄÜÌáÊ¾¿ì½Ý¼ü,ÔÚ EclipseÖÐ½Ð Content Assist,Android StudioÖÐ½Ð×öClass Name Completion£¬¿ì½Ý¼üÒ²±äÁË£¬¸ÄÖ®
-viewÀïÃæÓÐ´úÂë±È½Ïcompare with ...
+ctrl+j ï¿½ï¿½Ê¾ï¿½ï¿½Ç°ï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+ctrl+shift+F8 ï¿½Ïµï¿½ï¿½ï¿½ï¿½
+ctrl + p ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ý¼ï¿½,ï¿½ï¿½ Eclipseï¿½Ð½ï¿½ Content Assist,Android Studioï¿½Ð½ï¿½ï¿½ï¿½Class Name Completionï¿½ï¿½ï¿½ï¿½Ý¼ï¿½Ò²ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½Ö®
+viewï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½È½ï¿½compare with ...
 
-ÏòÇ°ÒÆ¶¯¶àÐÐ´úÂë£¬±ÈÈç·½·¨
-Ñ¡ÖÐ´úÂë£¬È»ºó
+ï¿½ï¿½Ç°ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ç·½ï¿½ï¿½
+Ñ¡ï¿½Ð´ï¿½ï¿½ë£¬È»ï¿½ï¿½
 shift + tab
+
+ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ Ê¹ï¿½Ã¿ï¿½Ý¼ï¿½Ê± ×¢ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Õ°ï¿½
+Android Studio -setting - code style - code generation - line comment -... first.. È¥ï¿½ï¿½ï¿½ï¿½Ñ¡
+ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½line comment
+
+ï¿½Ø±ï¿½Android StudioÕ¼ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä½ï¿½ï¿½ï¿½
+taskkill /f /t /im java.exe
